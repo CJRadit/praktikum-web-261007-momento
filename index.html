@@ -1,72 +1,490 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
     <head>
         <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>MomentoStudio</title>
-        <link
-            rel="stylesheet"
-            href="https://esm.sh/flexbox-reset@8.1.0/flexbox-reset.css"
+        <title>MomentoStudio — Fotografi Natural & Jujur</title>
+        <meta
+            name="description"
+            content="MomentoStudio menangkap momen emosional secara jujur dan natural tanpa pose yang kaku, menciptakan kenangan yang hidup selamanya."
         />
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+      <script type="module" crossorigin src="/assets/index-BIP00eiY.js"></script>
+      <link rel="stylesheet" crossorigin href="/assets/index-B4jAdiMX.css">
     </head>
     <body>
-        <div class="header container on-hero">
-            MomentoStudio
-            <div class="navbar">
-                <a href="#gallery">Gallery</a>
-                <a href="#why">Why Us?</a>
-                <a href="#testimony">Testimony</a>
-                <a href="#contact">Contact Us</a>
-            </div>
-        </div>
-        <div>
-            <div class="wrapper">
-                <div class="hero-bg">
-                    <div class="hero container">
-                        <span class="hero-heading">
-                            Setiap Cerita adalah Momen Berharga yang perlu
-                            Diabadikan
-                        </span>
-                        <span class="hero-subheading">
-                            Menangkap momen emosional secara jujur dan natural tanpa
-                            pose yang kaku, menciptakan kenangan yang hidup
-                            selamanya.
-                        </span>
+        <div id="app">
+            <header class="nav" id="nav">
+                <div class="container nav__inner">
+                    <a href="#top" class="brand">Momento<b>Studio</b></a>
+                    <nav class="nav__links">
+                        <a href="#galeri">Galeri</a>
+                        <a href="#mengapa">Mengapa Kami</a>
+                        <a href="#testimoni">Testimoni</a>
+                        <a href="#kontak" class="nav__cta">Hubungi Kami</a>
+                    </nav>
+                    <button class="nav__toggle" aria-label="Buka menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </header>
+
+            <main id="top">
+                <section class="hero">
+                    <div class="hero__bg">
+                        <img
+                            src="https://images.pexels.com/photos/2531658/pexels-photo-2531658.jpeg?auto=compress&cs=tinysrgb&w=1800"
+                            alt="Fotografer memegang kamera saat matahari terbenam"
+                        />
+                    </div>
+                    <div class="container hero__content">
+                        <span class="eyebrow"
+                            >Studio Fotografi • Indonesia</span
+                        >
+                        <h1 class="hero__title">
+                            Setiap Cerita adalah Momen <em>Berharga</em> yang
+                            perlu Diabadikan
+                        </h1>
+                        <p class="hero__sub">
+                            Menangkap momen emosional secara jujur dan natural
+                            tanpa pose yang kaku, menciptakan kenangan yang
+                            hidup selamanya.
+                        </p>
+                        <div class="hero__actions">
+                            <a href="#kontak" class="btn btn--primary"
+                                >Mulai Sesi Anda <span class="arrow">→</span></a
+                            >
+                            <a href="#galeri" class="btn btn--ghost"
+                                >Lihat Portofolio</a
+                            >
+                        </div>
+                    </div>
+                    <div
+                        class="container hero__meta"
+                        style="position: relative; left: 0; padding-top: 3rem"
+                    >
+                        <div><b>480+</b> sesi terabadikan</div>
+                        <div><b>48 jam</b> pengiriman preview</div>
+                        <div><b>4.9/5</b> rating klien</div>
+                    </div>
+                </section>
+
+                <section class="gallery section-pad" id="galeri">
+                    <div class="container">
+                        <div class="section-head reveal">
+                            <span class="eyebrow">Portofolio</span>
+                            <h2 class="section-title">
+                                Galeri <em>Karya</em> Kami
+                            </h2>
+                            <p class="section-intro">
+                                Setiap bidikan adalah cerita — dari hari bahagia
+                                pernikahan, branding bisnis, hingga potret diri
+                                yang membumi.
+                            </p>
+                        </div>
+                        <div class="gallery__grid">
+                            <figure class="gallery__item tall reveal">
+                                <img
+                                    src="https://images.pexels.com/photos/28687686/pexels-photo-28687686.jpeg?auto=compress&cs=tinysrgb&h=900"
+                                    alt="Pasangan pengantin tersenyum di luar ruangan"
+                                    loading="lazy"
+                                />
+                                <figcaption class="gallery__tag">
+                                    Prewedding
+                                </figcaption>
+                            </figure>
+
+                            <figure class="gallery__item reveal">
+                                <img
+                                    src="https://images.pexels.com/photos/29085930/pexels-photo-29085930.jpeg?auto=compress&cs=tinysrgb&h=650"
+                                    alt="Foto studio hitam putih seorang wanita"
+                                    loading="lazy"
+                                />
+                                <figcaption class="gallery__tag">
+                                    Portrait
+                                </figcaption>
+                            </figure>
+
+                            <figure class="gallery__item reveal">
+                                <img
+                                    src="https://images.pexels.com/photos/19314163/pexels-photo-19314163.jpeg?auto=compress&cs=tinysrgb&h=650"
+                                    alt="Close-up aneka dessert manis"
+                                    loading="lazy"
+                                />
+                                <figcaption class="gallery__tag">
+                                    Food & Product
+                                </figcaption>
+                            </figure>
+
+                            <figure class="gallery__item tall reveal">
+                                <img
+                                    src="https://images.pexels.com/photos/26820703/pexels-photo-26820703.jpeg?auto=compress&cs=tinysrgb&h=900"
+                                    alt="Potret pria berjas gelap elegan"
+                                    loading="lazy"
+                                />
+                                <figcaption class="gallery__tag">
+                                    Corporate
+                                </figcaption>
+                            </figure>
+
+                            <figure class="gallery__item wide reveal">
+                                <img
+                                    src="https://images.pexels.com/photos/35069916/pexels-photo-35069916.jpeg?auto=compress&cs=tinysrgb&h=900"
+                                    alt="Pasangan pengantin berpelukan di luar ruangan"
+                                    loading="lazy"
+                                />
+                                <figcaption class="gallery__tag">
+                                    Wedding
+                                </figcaption>
+                            </figure>
+
+                            <figure class="gallery__item reveal">
+                                <img
+                                    src="https://images.pexels.com/photos/38003551/pexels-photo-38003551.jpeg?auto=compress&cs=tinysrgb&h=650"
+                                    alt="Cheesecake dengan blueberry"
+                                    loading="lazy"
+                                />
+                                <figcaption class="gallery__tag">
+                                    F&B Branding
+                                </figcaption>
+                            </figure>
+
+                            <figure class="gallery__item reveal">
+                                <img
+                                    src="https://images.pexels.com/photos/34299170/pexels-photo-34299170.jpeg?auto=compress&cs=tinysrgb&h=650"
+                                    alt="Potret pria berjas abu-abu percaya diri"
+                                    loading="lazy"
+                                />
+                                <figcaption class="gallery__tag">
+                                    Business Portrait
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="why section-pad" id="mengapa">
+                    <div class="container">
+                        <div class="section-head reveal">
+                            <span class="eyebrow">Keunggulan</span>
+                            <h2 class="section-title">
+                                Mengapa <em>MomentoStudio?</em>
+                            </h2>
+                            <p class="section-intro">
+                                Kami percaya fotografi terbaik lahir dari rasa
+                                nyaman. Itulah kenapa setiap sesi dibangun di
+                                atas kepercayaan dan detail yang dijaga.
+                            </p>
+                        </div>
+                        <div class="why__grid">
+                            <article class="why__card reveal">
+                                <div class="why__num">01</div>
+                                <div class="why__icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 22c5.5 0 10-4.5 10-10S17.5 2 12 2 2 6.5 2 12s4.5 10 10 10z"
+                                        />
+                                        <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                                        <path d="M9 9h.01" />
+                                        <path d="M15 9h.01" />
+                                    </svg>
+                                </div>
+                                <h3 class="why__title">
+                                    Garansi Bebas Canggung
+                                </h3>
+                                <p class="why__desc">
+                                    Tidak nyaman di depan kamera? Kami pandu
+                                    hingga rileks dan natural, atau sesi diulang
+                                    tanpa biaya tambahan.
+                                </p>
+                            </article>
+
+                            <article class="why__card reveal">
+                                <div class="why__num">02</div>
+                                <div class="why__icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"
+                                        />
+                                    </svg>
+                                </div>
+                                <h3 class="why__title">Penyelesaian Cepat</h3>
+                                <p class="why__desc">
+                                    Hasil edit galeri preview dikirim dalam 48
+                                    jam, dan file final sesuai paket tanpa
+                                    menunggu berminggu-minggu.
+                                </p>
+                            </article>
+
+                            <article class="why__card reveal">
+                                <div class="why__num">03</div>
+                                <div class="why__icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"
+                                        />
+                                        <circle cx="12" cy="12" r="3" />
+                                    </svg>
+                                </div>
+                                <h3 class="why__title">Gaya Visual Khas</h3>
+                                <p class="why__desc">
+                                    Momen ditangkap dengan karakter visual yang
+                                    hangat, sinematik, dan jujur — bukan sekadar
+                                    foto standar.
+                                </p>
+                            </article>
+
+                            <article class="why__card reveal">
+                                <div class="why__num">04</div>
+                                <div class="why__icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                                        />
+                                    </svg>
+                                </div>
+                                <h3 class="why__title">Konsultasi Gratis</h3>
+                                <p class="why__desc">
+                                    Diskusikan konsep, lokasi, dan kebutuhan
+                                    Anda tanpa biaya. Kami bantu rancang sesi
+                                    terbaik untuk Anda.
+                                </p>
+                            </article>
+
+                            <article class="why__card reveal">
+                                <div class="why__num">05</div>
+                                <div class="why__icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4z"
+                                        />
+                                        <path d="m9 12 2 2 4-4" />
+                                    </svg>
+                                </div>
+                                <h3 class="why__title">Hak Cipta Transparan</h3>
+                                <p class="why__desc">
+                                    Lisensi penggunaan dan hak cetak dijelaskan
+                                    jelas di awal. Tidak ada biaya tersembunyi
+                                    setelah sesi.
+                                </p>
+                            </article>
+
+                            <article class="why__card reveal">
+                                <div class="why__num">06</div>
+                                <div class="why__icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+                                        />
+                                        <path d="m9 11 3 3L22 4" />
+                                    </svg>
+                                </div>
+                                <h3 class="why__title">
+                                    Tim Responsif & Profesional
+                                </h3>
+                                <p class="why__desc">
+                                    Komunikasi cepat, datang tepat waktu, dan
+                                    bekerja dengan standar tinggi dari sesi
+                                    hingga pengiriman.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="testi section-pad" id="testimoni">
+                    <div class="container">
+                        <div class="section-head reveal">
+                            <span class="eyebrow">Kata Mereka</span>
+                            <h2 class="section-title">
+                                Testimoni <em>Klien</em>
+                            </h2>
+                            <p class="section-intro">
+                                Kepercayaan adalah hal terbesar yang kami
+                                bangun. Inilah cerita mereka setelah bekerja
+                                sama dengan kami.
+                            </p>
+                        </div>
+                        <div class="testi__grid">
+                            <article class="testi__card reveal">
+                                <div class="stars">★★★★★</div>
+                                <blockquote class="testi__quote">
+                                    Kami sangat terkesan dengan profesionalisme
+                                    dan kualitas hasil fotografi yang luar
+                                    biasa. MomentoStudio telah membantu kami
+                                    menciptakan momen tak terlupakan untuk
+                                    pernikahan pertama kami.
+                                </blockquote>
+                                <div class="testi__person">
+                                    <div class="testi__avatar">R</div>
+                                    <div>
+                                        <div class="testi__name">
+                                            Bapak & Ibu Reihan
+                                        </div>
+                                        <div class="testi__role">
+                                            Klien Pernikahan
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="testi__card reveal">
+                                <div class="stars">★★★★★</div>
+                                <blockquote class="testi__quote">
+                                    Terima kasih sama MomentoStudio bantu kami
+                                    bikin foto-foto keren untuk branding toko
+                                    pastry saya.
+                                </blockquote>
+                                <div class="testi__person">
+                                    <div class="testi__avatar">S</div>
+                                    <div>
+                                        <div class="testi__name">Suriyah</div>
+                                        <div class="testi__role">
+                                            Pemilik Pastry Shop
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="testi__card reveal">
+                                <div class="stars">★★★★★</div>
+                                <blockquote class="testi__quote">
+                                    Gak perlu dipertanyakan lagi! Fotografer ini
+                                    super ramah dan fotonya juga bagus banget.
+                                    Hasilnya keren banget!
+                                </blockquote>
+                                <div class="testi__person">
+                                    <div class="testi__avatar">S</div>
+                                    <div>
+                                        <div class="testi__name">Sandy</div>
+                                        <div class="testi__role">
+                                            Klien Portrait
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="testi__card reveal">
+                                <div class="stars">★★★★★</div>
+                                <blockquote class="testi__quote">
+                                    Fotografi portrait bisnis saya berjalan
+                                    lebih baik karena tim mereka yang responsif
+                                    dan profesional. Saya senang bisa bekerja
+                                    sama dengan mereka untuk meningkatkan brand
+                                    image perusahaan.
+                                </blockquote>
+                                <div class="testi__person">
+                                    <div class="testi__avatar">H</div>
+                                    <div>
+                                        <div class="testi__name">Harry</div>
+                                        <div class="testi__role">
+                                            Business Portrait
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="testi__card reveal">
+                                <div class="stars">★★★★★</div>
+                                <blockquote class="testi__quote">
+                                    Bekerja sama dengan mereka sangat mudah.
+                                    Mereka responsif, cepat, dan hasilnya
+                                    memuaskan. Saya suka banget sama gaya
+                                    fotonya yang natural.
+                                </blockquote>
+                                <div class="testi__person">
+                                    <div class="testi__avatar">S</div>
+                                    <div>
+                                        <div class="testi__name">Sitohang</div>
+                                        <div class="testi__role">
+                                            Klien Korporat
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="testi__card reveal">
+                                <div class="stars">★★★★★</div>
+                                <blockquote class="testi__quote">
+                                    Fotografer ini memberikan layanan yang
+                                    sangat memuaskan. Hasil jepretan foto yang
+                                    dihasilkan sangat detail dan artistik,
+                                    melebihi ekspektasi saya. Sangat
+                                    direkomendasikan untuk bekerja dengan
+                                    mereka.
+                                </blockquote>
+                                <div class="testi__person">
+                                    <div class="testi__avatar">I</div>
+                                    <div>
+                                        <div class="testi__name">
+                                            ikhsangiring_041
+                                        </div>
+                                        <div class="testi__role">
+                                            Klien Portrait
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="cta section-pad" id="kontak">
+                    <div class="cta__bg">
+                        <img
+                            src="https://images.pexels.com/photos/7263859/pexels-photo-7263859.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                            alt="Fotografer menangkap matahari terbenam"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="container cta__inner">
+                        <span class="eyebrow reveal">Mulai Sekarang</span>
+                        <h2 class="cta__title reveal">
+                            Cerita Anda Layak <em>Diabadikan</em>
+                        </h2>
+                        <p class="cta__sub reveal">
+                            Konsultasi gratis tanpa komitmen. Diskusikan konsep
+                            dan tanggal sesi Anda bersama tim MomentoStudio.
+                        </p>
+                        <div class="hero__actions reveal" style="opacity: 1">
+                            <a
+                                href="#"
+                                class="btn btn--primary"
+                                target="_blank"
+                                rel="noopener"
+                                >Konsultasi Gratis
+                                <span class="arrow">→</span></a
+                            >
+                            <a href="#galeri" class="btn btn--ghost"
+                                >Lihat Galeri Lagi</a
+                            >
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__inner">
+                        <div class="footer__brand">Momento<b>Studio</b></div>
+                        <div class="footer__social">
+                            <!--<a href="#" aria-label="Instagram">Instagram</a>-->
+                            <a href="#" aria-label="WhatsApp">WhatsApp</a>
+                            <a href="#" aria-label="Email">Email</a>
+                        </div>
+                    </div>
+                    <div class="footer__copy">
+                        © <span class="_year"> 2026 </span> MomentoStudio.
+                        Setiap momen, abadi.
                     </div>
                 </div>
-            </div>
-            <div class="wrapper">
-                <div class="gallery container" id="gallery">
-                    <h1>Gallery</h1>
-                    <p>TODO</p>
-                </div>
-            </div>
-            <div class="why" id="why">
-                Mengapa MomentoStudio? - Garansi Bebas Canggung - Penyelesaian
-                Cepat (Fast Delivery) - Tangkap Momen dengan Gaya Visual Khas -
-                Konsultasi Gratis - Hak Cipta & Lisensi Transparan
-            </div>
-            <div class="testimony" id="testimony">
-                Testimoni Bapak dan Ibu Reihan "Kami sangat terkesan dengan
-                profesionalisme dan kualitas hasil fotografi yang luar biasa.
-                MomentoStudio telah membantu kami menciptakan momen tak
-                terlupakan untuk pernikahan pertama kami." Suriyah "Terima kasih
-                sama MomentoStudio bantu kami bikin foto-foto keren untuk
-                branding toko pastry saya." Sandy "Gak perlu dipertanyakan lagi!
-                Fotografer ini super ramah dan fotonya juga bagus banget.
-                Hasilnya keren banget!" Harry "Fotografi portrait bisnis saya
-                berjalan lebih baik karena tim mereka yang responsif dan
-                profesional. Saya senang bisa bekerja sama dengan mereka untuk
-                meningkatkan brand image perusahaan." Sitohang "Bekerja sama
-                dengan mereka sangat mudah. Mereka responsif, cepat, dan
-                hasilnya memuaskan. Saya suka banget sama gaya fotonya yang
-                natural." ikhsangiring_041 "Fotografer ini memberikan layanan
-                yang sangat memuaskan. Hasil jepretan foto yang dihasilkan
-                sangat detail dan artistik, melebihi ekspektasi saya. Sangat
-                direkomendasikan untuk bekerja dengan mereka."
-            </div>
+            </footer>
         </div>
-        <div class="footer" id="contact">Contact Us: ...</div>
     </body>
 </html>
